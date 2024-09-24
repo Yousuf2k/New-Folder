@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-stone-200 overflow-hidden sticky top-0">
+      <nav class="container w-4/5 mx-auto my-4 mb-10">
+        <ul class="flex justify-between items-center">
+          <li class="bg-lime-400 px-6 py-3 rounded-lg font-bold text-lg">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="flex items-center gap-5">
+            <div><img src="./images/logo.png" alt="" /></div>
+            <div class="text-xl font-bold">Donate Bangladesh</div>
+          </li>
+          <li class="flex items-center gap-4">
+            <div><img src="./images/coin.png" alt="" srcset="" /></div>
+            <div id="total-balance">5999</div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container mx-auto">
+      <div class="mt-20">
+        <ul class="flex items-center justify-center gap-6 text-xl font-bold">
+          <li class="bg-lime-400 px-6 py-4 rounded-lg">
+            <a href="">Donation</a>
+          </li>
+          <li class="border border-gray-900 px-6 py-4 rounded-lg">
+            <a href="">History</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-16 space-y-8">
+
+        <!-- NOAKHALI CARD -->
+
+        <div
+          class="grid lg:grid-cols-2 justify-items-center border border-gray-300 rounded-xl p-10 gap-5"
+        >
+          <div>
+            <img src="./images/noakhali.png" alt="" srcset="" />
+          </div>
+          <div class="grid content-between">
+            <div
+              class="flex bg-slate-200 content-container px-4 w-fit rounded-lg"
+            >
+              <div><img src="./images/coin.png" alt="" /></div>
+
+              <div class="donated-Amount" id="donated-Amount">0</div>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold">Donate for Noakhali</h2>
+              <p>
+                The recent flood in Noakhali is very severe have cuse many
+                damage.Millions of people across Bangladesh are left stranded
+                due to flash floods in Feni, Cumilla, Noakhali areas. Donate
+                today to our Bangladesh floods appeal to provide life-saving
+                support.For the last few days, due to heavy rain and massive
+                water releases, floods have struck again for the second time
+                this year. Many districts in Bangladesh have been underwater.
+                This flood is gradually damaging Feni, Noakhali, Cumilla,
+                Sylhet, and many other surrounding areas. Millions of people are
+                suffering from this unexpected situation.
+              </p>
+            </div>
+            <div>
+              <input
+                id="donationAmountInput"
+                
+                class="donationAmountInput border border-gray-300 w-full rounded-lg my-4 p-4"
+                type="number"
+                placeholder="Write your amount"
+              />
+              <button
+                onclick="my_modal_1.showModal()"
+                id="donate-btn"
+                class="bg-lime-400 p-5 rounded-lg w-full font-bold"
+              >
+                Donate Now
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box text-center">
+                  <h3 class="text-4xl font-bold">Congrats!</h3>
+                  <p class="py-4">You have donated</p>
+                  <p class="py-4 font-bold">Succesfully</p>
+                  <div class="modal-action justify-center">
+                    <form method="dialog">
+                      
+                      <button class="btn text-center">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </div>
+
+        <!-- FENI CARD -->
+
+        <div
+          class="grid lg:grid-cols-2 justify-items-center border border-gray-300 rounded-xl p-10 gap-5"
+        >
+          <div>
+            <img src="./images/noakhali.png" alt="" srcset="" />
+          </div>
+          <div class="grid content-between">
+            <div
+              class="flex bg-slate-200 content-container px-4 w-fit rounded-lg"
+            >
+              <div><img src="./images/coin.png" alt="" /></div>
+
+              <div id="donated-Amount-two">0</div>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold">Donate for Feni</h2>
+              <p>
+                The recent flood in Noakhali is very severe have cuse many
+                damage.Millions of people across Bangladesh are left stranded
+                due to flash floods in Feni, Cumilla, Noakhali areas. Donate
+                today to our Bangladesh floods appeal to provide life-saving
+                support.For the last few days, due to heavy rain and massive
+                water releases, floods have struck again for the second time
+                this year. Many districts in Bangladesh have been underwater.
+                This flood is gradually damaging Feni, Noakhali, Cumilla,
+                Sylhet, and many other surrounding areas. Millions of people are
+                suffering from this unexpected situation.
+              </p>
+            </div>
+            <div>
+              <input
+                id="donationAmountInput2"
+                class="donationAmountInput border border-gray-300 w-full rounded-lg my-4 p-4"
+                type="number"
+                placeholder="Write your amount"
+              />
+              <button onclick="my_modal_2.showModal()" id="donate-btn-two" class="bg-lime-400 p-5 rounded-lg w-full font-bold">
+                Donate Now
+              </button>
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box text-center">
+                  <h3 class="text-4xl font-bold">Congrats!</h3>
+                  <p class="py-4">You have donated</p>
+                  <p class="py-4 font-bold">Succesfully</p>
+                  <div class="modal-action justify-center">
+                    <form method="dialog">
+                      
+                      <button class="btn text-center">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </div>
+
+        <!-- CUMILLA CARD -->
+
+        <div
+          class="grid lg:grid-cols-2 justify-items-center border border-gray-300 rounded-xl p-10 gap-5"
+        >
+          <div>
+            <img src="./images/noakhali.png" alt="" srcset="" />
+          </div>
+          <div class="grid content-between">
+            <div
+              class="flex bg-slate-200 content-container px-4 w-fit rounded-lg"
+            >
+              <div><img src="./images/coin.png" alt="" /></div>
+
+              <div id="donated-Amount-Three">0</div>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold">Donate for Noakhali</h2>
+              <p>
+                The recent flood in Noakhali is very severe have cuse many
+                damage.Millions of people across Bangladesh are left stranded
+                due to flash floods in Feni, Cumilla, Noakhali areas. Donate
+                today to our Bangladesh floods appeal to provide life-saving
+                support.For the last few days, due to heavy rain and massive
+                water releases, floods have struck again for the second time
+                this year. Many districts in Bangladesh have been underwater.
+                This flood is gradually damaging Feni, Noakhali, Cumilla,
+                Sylhet, and many other surrounding areas. Millions of people are
+                suffering from this unexpected situation.
+              </p>
+            </div>
+            <div>
+              <input
+                id="donationAmountInput3"
+                class="donationAmountInput border border-gray-300 w-full rounded-lg my-4 p-4"
+                type="number"
+                placeholder="Write your amount"
+              />
+              <button onclick="my_modal_3.showModal()" id="donate-btn-three" class="bg-lime-400 p-5 rounded-lg w-full font-bold">
+                Donate Now
+              </button>
+
+              <dialog id="my_modal_3" class="modal">
+                <div class="modal-box text-center">
+                  <h3 class="text-4xl font-bold">Congrats!</h3>
+                  <p class="py-4">You have donated</p>
+                  <p class="py-4 font-bold">Succesfully</p>
+                  <div class="modal-action justify-center">
+                    <form method="dialog">
+                      
+                      <button class="btn text-center">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="h-20 bg-stone-200"></footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
