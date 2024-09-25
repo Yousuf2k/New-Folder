@@ -32,8 +32,8 @@
           <li class="bg-lime-400 px-6 py-4 rounded-lg">
             <a href="">Donation</a>
           </li>
-          <li class="border border-gray-900 px-6 py-4 rounded-lg">
-            <a href="">History</a>
+          <li id="history-btn" class="border border-gray-900 px-6 py-4 rounded-lg cursor-pointer">
+            History
           </li>
         </ul>
       </div>
@@ -42,7 +42,7 @@
 
         <!-- NOAKHALI CARD -->
 
-        <div
+        <div id="noakhali"
           class="grid lg:grid-cols-2 justify-items-center border border-gray-300 rounded-xl p-10 gap-5"
         >
           <div>
@@ -105,11 +105,11 @@
 
         <!-- FENI CARD -->
 
-        <div
+        <div id="feni"
           class="grid lg:grid-cols-2 justify-items-center border border-gray-300 rounded-xl p-10 gap-5"
         >
           <div>
-            <img src="./images/noakhali.png" alt="" srcset="" />
+            <img src="./images/feni.png" alt="" srcset="" />
           </div>
           <div class="grid content-between">
             <div
@@ -161,13 +161,13 @@
           </div>
         </div>
 
-        <!-- CUMILLA CARD -->
+        <!-- Quota CARD -->
 
-        <div
+        <div id="quota"
           class="grid lg:grid-cols-2 justify-items-center border border-gray-300 rounded-xl p-10 gap-5"
         >
           <div>
-            <img src="./images/noakhali.png" alt="" srcset="" />
+            <img src="./images/quota-protest.png" alt="" srcset="" />
           </div>
           <div class="grid content-between">
             <div
@@ -178,7 +178,7 @@
               <div id="donated-Amount-Three">0</div>
             </div>
             <div>
-              <h2 class="text-xl font-bold">Donate for Noakhali</h2>
+              <h2 class="text-xl font-bold">Aid for Quota Movement</h2>
               <p>
                 The recent flood in Noakhali is very severe have cuse many
                 damage.Millions of people across Bangladesh are left stranded
@@ -220,9 +220,16 @@
           </div>
         </div>
       </div>
+
+      <div id="history" class="hidden">
+        
+
+        <div id="history-container"></div>
+
+      </div>
     </main>
 
-    <footer class="h-20 bg-stone-200"></footer>
+    <footer id="footer" class="h-20 bg-stone-200"></footer>
 
     <script src="./script.js"></script>
   </body>

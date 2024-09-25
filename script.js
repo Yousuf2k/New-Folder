@@ -17,6 +17,14 @@ document.getElementById('donate-btn').addEventListener('click', function(){
     const totalDonation = donatedAmountNumber + addMoneyInputNumber;
     console.log(totalDonation);
 
+    // ADD money to history
+    const p = document.createElement('p');
+    const currentTime = new Date().toLocaleString();
+    
+    p.innerText = `Added: ${addMoneyInputNumber} tk Time: ${currentTime}`;
+    console.log(p);
+    document.getElementById('history-container').append(p);
+
     document.getElementById('donated-Amount').innerText = totalDonation;
 
     const totalBalance = document.getElementById('total-balance').innerText;
@@ -107,16 +115,17 @@ document.getElementById('donate-btn-two').addEventListener('click', function(){
 // ................... Blog
 
 
+function showSectionById(id){
+    document.getElementById('noakhali').classList.add('hidden');
+    document.getElementById('feni').classList.add('hidden');
+    document.getElementById('quota').classList.add('hidden');
+    document.getElementById('footer').classList.add('hidden');
+    document.getElementById('history').classList.remove('hidden');
+}
 
-const faqQuestions = document.querySelectorAll('.faq-question');
+document.getElementById('history-btn').addEventListener('click', function(){
 
-faqQuestions.forEach(question => {
-  question.addEventListener('click', () => {
-    const answer = question.nextElementSibling;   
-
-    answer.classList.toggle('hidden');   
-
-  });
-});
+    showSectionById('history');
+})
 
 
